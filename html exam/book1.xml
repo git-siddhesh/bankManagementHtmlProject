@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="book.xsl" type="text/xsl" ?>
+<catalog>
+  <cd>
+    <title>Empire Burlesque</title>
+    <author>Bob Dylan</author>
+    <publisher>Columbia</publisher>
+    <price>10.90</price>
+  </cd>
+  <cd>
+    <title>Hide your heart</title>
+    <author>Bonnie Tyler</author>
+    <publisher>CBS Records</publisher>
+    <price>9.90</price>
+  </cd>
+  <cd>
+    <title>Greatest Hits</title>
+    <author>Dolly Parton</author>
+    <publisher>RCA</publisher>
+    <price>9.90</price>
+  </cd>
+  <cd>
+    <title>Still got the blues</title>
+    <author>Gary Moore</author>
+    <publisher>Virgin records</publisher>
+    <price>10.20</price>
+  </cd>
+  <cd>
+    <title>Eros</title>
+    <author>Eros Ramazzotti</author>
+    <publisher>BMG</publisher>
+    <price>9.90</price>
+  </cd>
+  <cd>
+    <title>One night only</title>
+    <author>Bee Gees</author>
+    <publisher>Polydor</publisher>
+    <price>10.90</price>
+  </cd>
+  <cd>
+    <title>Sylvias Mother</title>
+    <author>Dr.Hook</author>
+    <publisher>CBS</publisher>
+    <price>8.10</price>
+  </cd>
+  <cd>
+    <title>Maggie May</title>
+    <author>Rod Stewart</author>
+    <publisher>Pickwick</publisher>
+    <price>8.50</price>
+  </cd>
+  <cd>
+    <title>Romanza</title>
+    <author>Andrea Bocelli</author>
+    <publisher>Polydor</publisher>
+    <price>10.80</price>
+  </cd>
+  <cd>
+    <title>When a man loves a woman</title>
+    <author>Percy Sledge</author>
+    <publisher>Atlantic</publisher>
+    <price>8.70</price>
+  </cd>
+  <cd>
+    <title>Black angel</title>
+    <author>Savage Rose</author>
+    <publisher>Mega</publisher>
+    <price>10.90</price>
+  </cd>
+</catalog>

@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>login page page</title>
+	<script type="text/javascript">
+	function valu() 
+	{
+		var err="a";
+		var str1=document.reg.name.value;
+		var str2=document.reg.pass.value;
+		
+		var y= new RegExp("^[0-9 a-z A-Z]+$","g");
+		if(str1==""||str2=="")
+		{	err="fill every block";
+	document.getElementById('lnam').innerText="*only alphabets";}
+		if(str2!=""&&!(str2.match(y)))
+			err="Enter correct password";
+		if(err=="a")
+		{
+			alert("validating...");
+			window.open("product.html");
+		}
+	else	
+			alert("Enter correct details "+ err);
+	}
+
+	</script>
+</head>
+<body>
+	<center><h1>Sign up</h1></center>
+<form name="reg">
+<p> Enter name<input type="text" name="name" placeholder="Name"></p>
+<span id="lnam" style="color:red"></span>
+<p> Password    <input type="password" name="pass" placeholder="Password"></p>
+</form>
+<form>
+<input type="button" name="submit" style="Width:80%; height:20px;" value="submit" onclick="valu()">
+</form>
+</body>
+</html>
