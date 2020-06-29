@@ -1,0 +1,116 @@
+<html>
+<head>
+	<title>Statement</title>
+	<style type="text/css">
+#ad{
+	width: 50%;
+	padding-left: 10px;
+	float: left;
+	border-color: red;
+	background-color: hsl(21,100%,97%);
+	transition-property:background;
+	transition-duration:1s;
+	transition-timing-function:linear;
+}
+#ad:hover{
+	background-color: hsl(19,100%,80%);
+}
+body{
+	background-color: #b3e0ff;
+}
+#tr{
+	width:50%;
+	padding-left: 10px;
+	float: right;
+	border-color: green;
+	background-color: hsl(121,100%,97%);
+	transition-property:background;
+	transition-duration:1s;
+	transition-timing-function:linear;
+}
+input{
+	text-align: center;
+	padding: 2px;
+}
+#tr:hover{
+	background-color: hsl(121,100%,80%);
+}
+#tst{
+	width: 100%;
+	float: left;
+	background-color:gainsboro;
+
+}
+p:hover{
+	font-family: serif;
+	font-size: 20px;
+}
+input:hover{
+	background-color:black;
+	color:white;
+}
+h3:hover{
+background-color: lightgreen;
+}
+input:focus{
+	border-color: red;
+	border-width: 3px;
+	color:black;
+	background-color: rgb(240,240,241);
+}
+#a{
+	background-color: gray;
+}
+	</style>
+</head>
+<body>
+<h1>Welcome to the BankBazar.com</h1>
+	<form>
+<fieldset id="ad">
+<legend>Account details</legend>
+	<p>Acc no:<input type="text" name="no" placeholder="eg: 0749..." ></p>
+	<p>Account type:
+	Saving<input  type="radio"  ></p> 
+	<p style="margin-left:86px;">Current:<input type="radio" ></p>
+</fieldset>
+
+<fieldset id="tr">
+<legend>Transaction</legend>
+	<p>Amount:<input type="text" placeholder="eg:3000$" ></p>
+	<p>Trannsfer from<input  type="text" placeholder="acc no" ></p> 
+	<p>Trannsfer to<input  type="text" placeholder="acc no" ></p> 
+</fieldset>
+
+<fieldset id="tst">
+<legend>Statement</legend>
+	<table border="0">
+		<tr id="a">
+			<th>Sno.</th><th>Date</th><th>credit/debit</th>
+			<th>Updated bal</th><th>Description</th>
+		</tr>
+		<tr id="b">
+			<td>1</td><td>18/01/19</td><td style=" text-align:center;">cr.</td>
+			<td>20,040.19</td><td>check no:123..</td>
+		</tr>
+		<tr id="c">
+			<td>2</td><td>29/01/19</td><td style=" text-align:center;">db.</td>
+			<td>18,100.56</td><td>ATM tr:4546..</td>
+		</tr>	
+		<tr id="d">
+			<td>3</td><td>22/02/19</td><td style=" text-align:center;">db.</td>
+			<td>12,733.23</td><td>Paytm tr:2384..</td>
+		</tr>
+		<tr id="e">
+			<td>4</td><td>05/03/19</td><td style=" text-align:center;">cr.</td>
+			<td>15,034.65</td><td>cash..</td>
+		</tr>
+		<tr id="f">
+			<td>5</td><td>31/03/19</td><td style=" text-align:center;">db.</td>
+			<td>14,905.56</td><td>redbus t-no:7567..</td>
+		</tr>
+	</table>
+	<h3>click here to go back on HOME page <a href="welcome.html">back</a></h3>
+</fieldset>
+	</form>
+</body>
+</html>

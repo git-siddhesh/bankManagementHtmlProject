@@ -1,0 +1,34 @@
+
+		input,select{
+			color: red;
+		 text-align: center;
+		 border-radius: 30px;
+		 border-width: 5px;
+		 border-color: green;
+		 box-shadow: black;
+		 }
+		 input:hover,select:hover{
+		 	font-size: 20px;
+		 	color:rgb(200,50,30);
+		 	background-color: rgb(200,300,200);
+
+
+		 }
+		 input:focus,select:focus{
+	background-color: #111;
+	border-color: red;
+	color: white;}
+		 body{
+		 	display: inline;
+		 	background-color:black;
+		 	transition:background 0.5s ease;
+		 	color:white;
+		 	margin: auto;
+		 	positon:relative:
+		 }
+		 div{
+		 background: rgba(0,0,0,0.5);
+		 text-shadow: silver;
+		 text-decoration:overline;
+		 color: orange;
+		 }

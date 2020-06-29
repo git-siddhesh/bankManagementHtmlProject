@@ -1,0 +1,93 @@
+<html>
+<head>
+	<title>Sign up page</title>
+	<script type="text/javascript">
+	 function func()
+	  {	
+			var check="a";
+		var str1=document.reg.fnam.value;
+		var str2=document.reg.lnam.value;
+		var str4=document.reg.no.value;
+		 var str5=document.reg.pass.value;
+		 var str6=document.reg.conf.value;
+			
+		 
+		 var s4= new RegExp("^[0-9]+$","g");
+		 var s5= new RegExp("^[0-9 @ # a-z A-Z]+$","g");
+		 
+		 var s1= new RegExp("^[a-z A-Z]+$","g");
+
+		 if(!(str1.match(s1)))
+		 {		check="b";
+ document.getElementById('fname').innerText="*only alphabets";
+		 }
+		 if(!(str2.match(s1)))
+		 {		check="b";
+		    document.getElementById('lnam').innerText="*only alphabets";
+		 }
+		 if(!(str4.match(s4)))
+		 {		check="b";
+		        document.getElementById('no').innerText="*only and min 16digits";
+		 }
+		 if(!(str5.match(s5)))
+		 {		check="b";
+		        document.getElementById('pass').innerText="*special char:@,# min:6 digits";
+		 }
+		 if(!(str6.match(str5)))
+		 {		check="b";
+		        document.getElementById('conf').innerText="*password not same";
+		 }
+		 if(check=="a")
+		{
+			alert("validating...");
+			window.open("welcome.html","_self");
+		}
+		else
+			alert("not valid details");
+		 
+	  }
+	 
+	 </script>
+	<link rel="stylesheet" type="text/css" href="signupcss.css">
+
+	</head>
+<body><center>
+	<form name="reg">
+		<fieldset>
+		<legend>Register with us</legend>
+	
+	<p>FIRST-NAME:<input type="text" name="fnam" placeholder="eg: rahul" required/></p>
+	<span id="fname"></span>
+	
+	<p>LAST-NAME:<input  type="text" name="lnam" placeholder="eg: soni" required/></p> 
+		<span id="lnam"></span>
+	
+	 <p>GENDER:<select name="gender" value="Gender" >
+		<option>Male</option>
+		<option>Female</option>
+	</select></p>
+	
+	<p>EMAIL-ID:<input type="mail" name="mail" placeholder="eg: xyz@abc" required/>@<input type="text" name="mail2"  required/>.com</p>
+	
+	<p>AGE:<input type="tel" name="age" placeholder="eg: 25yeaars" required/></p>
+	
+	<p>ACC NO:<input type="text" name="no" placeholder="eg: 123" required/></p>
+		<span id="no"></span>	
+	
+	<p>BANK-ID:<input type="text" name="id" placeholder="eg: BARBO-GH" required/></p>
+	
+	<p>PASSWORD:<input type="password" name="pass" placeholder="eg: PH12#A" required/></p>
+		<span id="pass"></span>	
+	
+	<p>CONF PASS:<input type="password" name="conf" placeholder="eg: PH12#A" required/></p>
+		<span id="conf"></span><br/>	
+	
+	<input type="checkbox" required/>I accept all <a href="#">terms</a> and conditions
+
+	<input class="sub" type="button" style="width:80%; height:20px text-align:center" value="Register me" onclick="func()"> 
+</fieldset>
+</form>
+</center>
+<div>Bankbazar.com...</div>
+</body>
+</html>
